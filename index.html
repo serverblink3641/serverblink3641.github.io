@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <main>
+      <section class="container">
+        <div class="form__container">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form>
+            <div class="labels">
+              <label for="email"> Email address </label>
+              <p class="error">Valid email required</p>
+            </div>
+            <input type="text" id="email" placeholder="email@company.com" />
+
+            <button>Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="image__container">
+          <img
+            class="image__desktop"
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="desktop image ui"
+          />
+          <img
+            class="image__mobile"
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="mobile image ui"
+          />
+        </div>
+      </section>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <section class="modal">
+        <div class="modal__container">
+          <div>
+            <img src="assets/images/icon-success.svg" alt="success icon" />
+            <h2>Thanks for subscribing!</h2>
+            <p>
+              A confirmation email has been sent to
+              <output id="user__email"></output>. Please open it and click the
+              button inside to confirm your subscription.
+            </p>
+          </div>
+          <button class="modal__close">Dismiss message</button>
+        </div>
+      </section>
+      <!-- Success message end -->
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

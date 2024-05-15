@@ -20,12 +20,12 @@
           <li>Exclusive deals and promotions to keep you ahead of the game!</li>
           <li>And much more!</li>
         </ul>
-        <form id="signupForm">
+        <form id="signupForm" action="submit.php" method="post">
           <div class="labels">
             <label for="email"> Email Address </label>
             <p class="error">Valid Email Required</p>
           </div>
-          <input type="text" id="email" placeholder="email@company.com" />
+          <input type="text" id="email" name="email" placeholder="email@company.com" />
           <button type="submit">Subscribe to Our Newsletter</button>
         </form>
       </div>

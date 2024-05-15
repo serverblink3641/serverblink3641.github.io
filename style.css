@@ -11,14 +11,14 @@
   /* Neutral */
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoal-grey: hsl(235, 18%, 26%);
-  --grey: hsl(231, 7%, 60%);
+  --grey: hsl(0, 0%, 9%);
   --white: hsl(0, 0%, 100%);
 }
 
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: var(--charcoal-grey);
+  background-color: var(--grey);
 }
 
 img {
@@ -40,7 +40,7 @@ img {
 }
 
 .image__container img {
-  width: 100%;
+  width: auto;
 }
 
 .form__container {
@@ -178,7 +178,7 @@ button:focus {
 
 @media screen and (min-width: 640px) {
   .form__container h1 {
-    font-size: 3.5rem;
+    font: size 2.5rem;
   }
 
   .modal {
@@ -215,10 +215,13 @@ button:focus {
     grid-template-columns: 50% 50%;
     padding: 1.5rem;
     border-radius: 2.2rem;
+    text-align: left;
+    ;
   }
 
   .image__container {
     order: 2;
+    margin: auto;
   }
 
   .form__container {

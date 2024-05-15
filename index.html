@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- START Formbricks Surveys -->
-<script type="text/javascript">
-  !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://unpkg.com/@formbricks/js@^1.6.5/dist/index.umd.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e),setTimeout(function(){window.formbricks.init({environmentId: "clw8b8gk203opxzaalvbxosrv", apiHost: "https://app.formbricks.com"})},500)}();
-  </script>
-  <!-- END Formbricks Surveys -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
@@ -56,5 +51,21 @@
     </section>
     <!-- Success message end -->
   </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('signupForm');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get the email input value
+        const emailInput = document.getElementById('email').value;
+
+        // Redirect to the specified URL
+        window.location.href = 'https://signup-bonus.kinkyentertainment.com/stakebonus?email=' + encodeURIComponent(emailInput);
+      });
+    });
+  </script>
 </body>
 </html>
